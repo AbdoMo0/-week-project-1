@@ -21,4 +21,5 @@ class Solution:
             i += 1
 
         return merged_intervals
+# this code is correct, well done!
 # you should also solve Week Problem 1. https://edu.kpfu.ru/mod/url/view.php?id=485557
