@@ -9,3 +9,5 @@ class Solution(object):
                     count += 1 
         
         return count
+
+# you should solve in a linear time
