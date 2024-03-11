@@ -22,3 +22,6 @@ class Solution:
 solution = Solution()
 print(solution.threeSumClosest([-1, 2, 1, -4], 1))
 print(solution.threeSumClosest([1, 2, 3], 6)) 
+
+# Correct. Please add time and memory complexities
+
