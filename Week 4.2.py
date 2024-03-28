@@ -24,4 +24,4 @@ print("Does set contain 3?", my_set.contains(3))
 
 # Abdelrahman Mohamed 11/314a
 
-
+# you should use that the array is already sorted. please, rewrite a code without using ready operations as "remove" etc. you should go through the array using the loop
