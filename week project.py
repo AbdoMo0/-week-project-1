@@ -1,25 +1,12 @@
-# Abdelrahman Mohamed
-class Solution:
-    def insert(self, intervals, new_interval):
-        merged_intervals = []
-        n = len(intervals)
-        i = 0
+from itertools import permutations
 
-        while i < n and intervals[i].end < new_interval.start:
-            merged_intervals.append(intervals[i])
-            i += 1
+def count_permutations_with_beautiful_points(n, k):
+    count = 0
+    for perm in permutations(range(1, n + 1)):
+        beautiful_points = sum(1 for i in range(n) if perm[i] == i + 1)
+        if beautiful_points == k:
+            count += 1
+    return count
 
-        while i < n and intervals[i].start <= new_interval.end:
-            new_interval.start = min(new_interval.start, intervals[i].start)
-            new_interval.end = max(new_interval.end, intervals[i].end)
-            i += 1
-
-        merged_intervals.append(new_interval)
-
-        while i < n:
-            merged_intervals.append(intervals[i])
-            i += 1
-
-        return merged_intervals
-# this code is correct, well done!
-# you should also solve Week Problem 1. https://edu.kpfu.ru/mod/url/view.php?id=485557
+n, k = map(int, input().split())
+print(count_permutations_with_beautiful_points(n, k))
