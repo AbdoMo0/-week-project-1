@@ -10,3 +10,5 @@ def min_weight_difference(N, weights):
 N = 5
 weights = [3, 1, 4, 2, 2]
 print(min_weight_difference(N, weights))
+
+#Correct!
