@@ -8,3 +8,6 @@ def min_board_size(w, h, n):
 
 w, h, n = map(int, input().split())
 print(min_board_size(w, h, n))
+
+##Sorry, but the algorithm is not correct. and answer is also incorrect.
+
