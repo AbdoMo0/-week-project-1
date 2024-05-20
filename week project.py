@@ -10,3 +10,5 @@ def count_permutations_with_beautiful_points(n, k):
 
 n, k = map(int, input().split())
 print(count_permutations_with_beautiful_points(n, k))
+
+#you are not able to use import permutations
